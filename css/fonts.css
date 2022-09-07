@@ -1,0 +1,43 @@
+ /* FONTS */
+
+ /* Caveat Regular */
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/Caveat-Regular.woff2") format("woff2");
+}
+
+/* Montserrat Thin */
+@font-face {
+  font-family: "Montserrat Thin";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../resources/fonts/Montserrat-Thin.woff2") format("woff2");
+}
+
+/* Montserrat Regular */
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+/* Montserrat SemiBold */
+@font-face {
+  font-family: "Montserrat SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../resources/fonts/Montserrat-SemiBold.woff2") format("woff2");
+}
+
+/* Montserrat Bold */
+@font-face {
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/fonts/Montserrat-Bold.woff2") format("woff2");
+}
+
+
