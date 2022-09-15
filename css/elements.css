@@ -1,0 +1,122 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ELEMENTS */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: medium;
+}
+
+font {
+  color: #1f2220;
+}
+
+a {
+  color: #1f2220;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section {
+  padding: 0 1.5rem 0 1.5rem;
+  border-bottom: 1px solid #dedddd;
+}
+
+.title {
+  font-family: "Caveat", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-family: "Caveat", serif;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  font-family: "Montserrat Bold", sans-serif;
+  line-height: 1.3rem;
+  color: #136f63;
+  text-decoration: none;
+  border-bottom: solid 1px #136f63;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+  color: #ffb101;
+  border-bottom-color: #ffb101;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.scroll-disabled {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 420px) {
+  .section {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .section {
+    padding: 0 4rem 0 4rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .subtitle {
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+}

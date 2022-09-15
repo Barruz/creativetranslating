@@ -1,11 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
  /* FONTS */
 
  /* Caveat Regular */
-@font-face {
+ @font-face {
   font-family: "Caveat";
   font-style: normal;
   font-weight: 400;
   src: url("../resources/fonts/Caveat-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* Montserrat Thin */
@@ -14,6 +22,7 @@
   font-style: normal;
   font-weight: 100;
   src: url("../resources/fonts/Montserrat-Thin.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* Montserrat Regular */
@@ -22,6 +31,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../resources/fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* Montserrat SemiBold */
@@ -30,6 +40,7 @@
   font-style: normal;
   font-weight: 600;
   src: url("../resources/fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* Montserrat Bold */
@@ -38,6 +49,6 @@
   font-style: normal;
   font-weight: 700;
   src: url("../resources/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-display: swap;
 }
-
 
