@@ -489,6 +489,12 @@ BREAKPOINTS
   padding-bottom: 1rem;
 }
 
+.portfolio-detail__card__textbox__review {
+  border-top: 1px solid #ffb101;
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+}
+
 .portfolio-detail__card__links {
   list-style: none;
   -webkit-padding-start: 1rem;
