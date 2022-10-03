@@ -31,13 +31,14 @@
       content="Portfolio website of a translator who focuses on creative content in English and Czech."
     />
 
+    <script src="js/main.js"></script>
+    <script src="js/modernizr.js"></script>
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/elements.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/menu.css" />
-
-    <script src="js/main.js"></script>
 
     <!-- ADD COOKIE CONSENT FORM -->
     <!-- ADD GOOGLE ANALYTICS -->
@@ -73,7 +74,13 @@
   <body>
     <div class="section section-menu" id="menu">
       <button aria-label="Logo" onclick="scrollToTop()" class="logo-wrapper">
-        <img src="resources/images/logo.svg" class="logo" alt="Logo" />
+        <img
+          src="resources/images/logo.svg"
+          width="218"
+          height="126"
+          class="logo"
+          alt="Logo"
+        />
       </button>
       <div
         role="button"
@@ -124,7 +131,12 @@
 
         <div class="section-home__heroimage-xs">
           <div class="section-home__background"></div>
-          <img src="resources/images/hero-image.gif" alt="" />
+          <img
+            src="resources/images/hero-image.gif"
+            width="1692"
+            height="1314"
+            alt=""
+          />
         </div>
 
         <div class="section-home__herotext__text-wrapper">
@@ -163,7 +175,12 @@
       </div>
       <div class="section-home__heroimage">
         <div class="section-home__background"></div>
-        <img src="resources/images/hero-image.gif" alt="" />
+        <img
+          src="resources/images/hero-image.gif"
+          width="1692"
+          height="1314"
+          alt=""
+        />
       </div>
     </div>
 
@@ -323,10 +340,16 @@
       <div class="portfolio-detail__card hidden" id="please-enter-destination">
         <div class="portfolio-detail__card__wrapper">
           <div>
-            <img
-              src="resources/images/portfolio/pfv.jpg"
-              alt="Play for Voices"
-            />
+            <picture>
+              <source type="image/webp" srcset="resources/images/portfolio/pfv.webp" />
+              <source type="image/jpeg" srcset="resources/images/portfolio/pfv.jpg" />
+              <img
+                src="resources/images/portfolio/pfv.jpg"
+                alt="Play for Voices"
+                width="1000"
+                height="666"
+              />
+            </picture>
           </div>
 
           <div>
@@ -388,7 +411,16 @@
       <div class="portfolio-detail__card hidden" id="the-pack">
         <div class="portfolio-detail__card__wrapper">
           <div>
-            <img src="resources/images/portfolio/smecka.jpg" alt="The Pack" />
+            <picture>
+              <source type="image/webp" srcset="resources/images/portfolio/smecka.webp" />
+              <source type="image/jpeg" srcset="resources/images/portfolio/smecka.jpg" />
+              <img
+                src="resources/images/portfolio/smecka.jpg"
+                alt="The Pack"
+                width="1000"
+                height="666"
+              />
+            </picture>
           </div>
           <div>
             <div class="portfolio-detail__card__title">The Pack</div>
@@ -426,10 +458,16 @@
       <div class="portfolio-detail__card hidden" id="mifsud">
         <div class="portfolio-detail__card__wrapper">
           <div>
-            <img
-              src="resources/images/portfolio/mifsud.jpg"
-              alt="In the Name of the Father (and of the Son)"
-            />
+            <picture>
+              <source type="image/webp" srcset="resources/images/portfolio/mifsud.webp" />
+              <source type="image/jpeg" srcset="resources/images/portfolio/mifsud.jpg" />
+              <img
+                src="resources/images/portfolio/mifsud.jpg"
+                alt="In the Name of the Father (and of the Son)"
+                width="1000"
+                height="666"
+              />
+            </picture>
           </div>
           <div>
             <div class="portfolio-detail__card__title">
@@ -476,7 +514,16 @@
       <div class="portfolio-detail__card hidden" id="landigo">
         <div class="portfolio-detail__card__wrapper">
           <div>
-            <img src="resources/images/portfolio/landigo.jpg" alt="Landigo" />
+            <picture>
+              <source type="image/webp" srcset="resources/images/portfolio/landigo.webp" />
+              <source type="image/jpeg" srcset="resources/images/portfolio/landigo.jpg" />
+              <img
+                src="resources/images/portfolio/landigo.jpg"
+                alt="Landigo"
+                width="1000"
+                height="666"
+              />
+            </picture>
           </div>
           <div>
             <div class="portfolio-detail__card__title">Landigo</div>
@@ -507,7 +554,16 @@
       <div class="portfolio-detail__card hidden" id="broth">
         <div class="portfolio-detail__card__wrapper">
           <div>
-            <img src="resources/images/portfolio/vyvary.jpg" alt="Broth" />
+            <picture>
+              <source type="image/webp" srcset="resources/images/portfolio/vyvary.webp" />
+              <source type="image/jpeg" srcset="resources/images/portfolio/vyvary.jpg" />
+              <img
+                src="resources/images/portfolio/vyvary.jpg"
+                alt="Broth"
+                width="1000"
+                height="666"
+              />
+            </picture>
           </div>
           <div>
             <div class="portfolio-detail__card__title">Broth & Seeds</div>
@@ -540,10 +596,16 @@
       <div class="portfolio-detail__card hidden" id="mac">
         <div class="portfolio-detail__card__wrapper">
           <div>
-            <img
-              src="resources/images/portfolio/mac.jpg"
-              alt="Authors' Reading Month"
-            />
+            <picture>
+              <source type="image/webp" srcset="resources/images/portfolio/mac.webp" />
+              <source type="image/jpeg" srcset="resources/images/portfolio/mac.jpg" />
+              <img
+                src="resources/images/portfolio/mac.jpg"
+                alt="Authors' Reading Month"
+                width="1000"
+                height="666"
+              />
+            </picture>
           </div>
           <div>
             <div class="portfolio-detail__card__title">
@@ -627,12 +689,16 @@
         </div>
 
         <div class="section-about__headshot">
-          <img src="resources/images/headshot.jpg" alt="Profile picture" />
-          <!--<picture>
+          <picture class="section-about__headshot__picture">
             <source type="image/webp" srcset="resources/images/headshot.webp" />
             <source type="image/jpeg" srcset="resources/images/headshot.jpg" />
-            <img src="resources/images/headshot.jpg" alt="Profile picture" />
-          </picture>-->
+            <img
+              src="resources/images/headshot.jpg"
+              alt="Profile picture"
+              width="400"
+              height="617"
+            />
+          </picture>
         </div>
       </div>
     </div>
