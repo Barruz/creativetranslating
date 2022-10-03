@@ -5,15 +5,19 @@
 * Browsers: last 4 version
 */
 
- /* FONTS */
+/* FONTS */
 
- /* Caveat Regular */
- @font-face {
+/* Caveat Regular */
+@font-face {
   font-family: "Caveat";
   font-style: normal;
   font-weight: 400;
   src: url("../resources/fonts/Caveat-Regular.woff2") format("woff2");
   font-display: swap;
+  unicode-range: U+20-21, U+24-5F, U+61-7A, U+7C, U+A0, U+A7, U+A9, U+C1, U+C9,
+    U+CD, U+D3, U+DA, U+DD, U+E1, U+E9, U+ED, U+F3, U+FA, U+FD, U+10C-10F,
+    U+11A-11B, U+147-148, U+158-159, U+160-161, U+164-165, U+16E-16F, U+17D-17E,
+    U+2010-2011, U+2013, U+2018, U+201A, U+201C, U+201E, U+2026, U+2030, U+20AC;
 }
 
 /* Montserrat Thin */
@@ -23,6 +27,10 @@
   font-weight: 100;
   src: url("../resources/fonts/Montserrat-Thin.woff2") format("woff2");
   font-display: swap;
+  unicode-range: U+20-21, U+24-5F, U+61-7A, U+7C, U+A0, U+A7, U+A9, U+C1, U+C9,
+    U+CD, U+D3, U+DA, U+DD, U+E1, U+E9, U+ED, U+F3, U+FA, U+FD, U+10C-10F,
+    U+11A-11B, U+147-148, U+158-159, U+160-161, U+164-165, U+16E-16F, U+17D-17E,
+    U+2010-2011, U+2013, U+2018, U+201A, U+201C, U+201E, U+2026, U+2030, U+20AC;
 }
 
 /* Montserrat Regular */
@@ -32,6 +40,10 @@
   font-weight: 400;
   src: url("../resources/fonts/Montserrat-Regular.woff2") format("woff2");
   font-display: swap;
+  unicode-range: U+20-21, U+24-5F, U+61-7A, U+7C, U+A0, U+A7, U+A9, U+C1, U+C9,
+    U+CD, U+D3, U+DA, U+DD, U+E1, U+E9, U+ED, U+F3, U+FA, U+FD, U+10C-10F,
+    U+11A-11B, U+147-148, U+158-159, U+160-161, U+164-165, U+16E-16F, U+17D-17E,
+    U+2010-2011, U+2013, U+2018, U+201A, U+201C, U+201E, U+2026, U+2030, U+20AC;
 }
 
 /* Montserrat SemiBold */
@@ -41,6 +53,10 @@
   font-weight: 600;
   src: url("../resources/fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-display: swap;
+  unicode-range: U+20-21, U+24-5F, U+61-7A, U+7C, U+A0, U+A7, U+A9, U+C1, U+C9,
+    U+CD, U+D3, U+DA, U+DD, U+E1, U+E9, U+ED, U+F3, U+FA, U+FD, U+10C-10F,
+    U+11A-11B, U+147-148, U+158-159, U+160-161, U+164-165, U+16E-16F, U+17D-17E,
+    U+2010-2011, U+2013, U+2018, U+201A, U+201C, U+201E, U+2026, U+2030, U+20AC;
 }
 
 /* Montserrat Bold */
@@ -50,5 +66,8 @@
   font-weight: 700;
   src: url("../resources/fonts/Montserrat-Bold.woff2") format("woff2");
   font-display: swap;
+  unicode-range: U+20-21, U+24-5F, U+61-7A, U+7C, U+A0, U+A7, U+A9, U+C1, U+C9,
+    U+CD, U+D3, U+DA, U+DD, U+E1, U+E9, U+ED, U+F3, U+FA, U+FD, U+10C-10F,
+    U+11A-11B, U+147-148, U+158-159, U+160-161, U+164-165, U+16E-16F, U+17D-17E,
+    U+2010-2011, U+2013, U+2018, U+201A, U+201C, U+201E, U+2026, U+2030, U+20AC;
 }
-
