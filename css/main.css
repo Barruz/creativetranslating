@@ -525,6 +525,25 @@ BREAKPOINTS
   margin-bottom: 0.5rem;
 }
 
+.portfolio__full-resume {
+  width: 100%;
+}
+
+.portfolio__full-resume > .subtitle > a {
+  color: #136f63;
+}
+
+.portfolio__full-resume > .subtitle > a:hover,
+.portfolio__full-resume > .subtitle > a:active {
+  color: #ffb101;
+}
+
+@media (min-width: 576px) {
+  .portfolio__full-resume > .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .portfolio-detail {
     padding-bottom: 0;
@@ -575,6 +594,10 @@ BREAKPOINTS
     -o-object-fit: cover;
     object-fit: cover;
     height: 100%;
+  }
+
+  .portfolio__full-resume > .subtitle {
+    text-align: center;
   }
 }
 
