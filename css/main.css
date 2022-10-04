@@ -806,8 +806,30 @@ BREAKPOINTS
 }
 
 .section-footer__copyright {
-  font-size: medium;
+  font-size: small;
   color: #ffffff;
+}
+
+.section-footer__copyright > span {
+  display: none;
+}
+
+.section-footer__credits {
+  font-size: small;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid #ffffff;
+  display: block;
+}
+
+.section-footer__credits:hover,
+.section-footer__credits:active {
+  color: #ffb101;
+  border-color: #ffb101;
 }
 
 .section-footer__scroll-to-top {
@@ -815,4 +837,92 @@ BREAKPOINTS
   padding-top: 1.5rem;
   font-size: 3rem;
   line-height: 2rem;
+}
+
+.credits-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+  display: none;
+  background-color: #ffffff;
+  overflow-y: auto;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.credits-detail__visible {
+  display: block;
+}
+
+.credits-detail__hamburger-wrapper {
+  position: fixed;
+  z-index: 6;
+  top: 1.2rem;
+  right: 0;
+}
+
+.credits-detail__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.credits-detail__card {
+  width: 80%;
+  padding: 2rem 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credits-detail__image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 3px dashed #ffb101;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits-detail__image img,
+.credits-detail__image__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.credits-detail__text {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .section-footer__copyright {
+    font-size: medium;
+  }
+
+  .section-footer__copyright > span {
+    display: inline-block;
+  }
+
+  .section-footer__credits {
+    padding-left: 0;
+    padding-top: 0;
+    margin-left: 0;
+    font-size: medium;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .credits-detail__card {
+    width: 20rem;
+    padding: 2rem;
+  }
 }

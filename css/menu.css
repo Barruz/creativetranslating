@@ -136,17 +136,20 @@
 }
 
 .menu__contentbox__visible > .hamburger-icon:before,
-.portfolio-detail__hamburger-wrapper > .hamburger-icon:before {
+.portfolio-detail__hamburger-wrapper > .hamburger-icon:before,
+.credits-detail__hamburger-wrapper > .hamburger-icon:before {
   transform: translateY(12px) rotate(135deg);
 }
 
 .menu__contentbox__visible > .hamburger-icon:after,
-.portfolio-detail__hamburger-wrapper > .hamburger-icon:after {
+.portfolio-detail__hamburger-wrapper > .hamburger-icon:after,
+.credits-detail__hamburger-wrapper > .hamburger-icon:after {
   transform: translateY(-12px) rotate(-135deg);
 }
 
 .menu__contentbox__visible > .hamburger-icon > div,
-.portfolio-detail__hamburger-wrapper > .hamburger-icon > div {
+.portfolio-detail__hamburger-wrapper > .hamburger-icon > div,
+.credits-detail__hamburger-wrapper > .hamburger-icon > div {
   transform: scale(0);
 }
 
