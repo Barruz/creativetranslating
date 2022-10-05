@@ -414,8 +414,9 @@ BREAKPOINTS
 .portfolio-detail__hamburger-wrapper {
   position: fixed;
   z-index: 6;
-  top: 1.2rem;
+  top: 1rem;
   right: 0;
+  padding-top: 0.5rem;
 }
 
 .portfolio-detail__item-nav {
@@ -860,6 +861,7 @@ BREAKPOINTS
   padding-top: 1.5rem;
   font-size: 3rem;
   line-height: 2rem;
+  padding-right: 0.5rem;
 }
 
 .credits-detail {
@@ -883,8 +885,9 @@ BREAKPOINTS
 .credits-detail__hamburger-wrapper {
   position: fixed;
   z-index: 6;
-  top: 1.2rem;
+  top: 1rem;
   right: 0;
+  padding-top: 0.5rem;
 }
 
 .credits-detail__inner-wrapper {
@@ -932,6 +935,10 @@ BREAKPOINTS
 
   .section-footer__copyright > span {
     display: inline-block;
+  }
+
+  .section-footer__scroll-to-top {
+    padding-right: 1rem;
   }
 
   .section-footer__credits {
