@@ -180,3 +180,30 @@
     margin-bottom: -0.1rem;
   }
 }
+
+/* COOKIES MENU */
+
+
+.section-menu__cookies > a {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  font-size: large;
+  height: 100%;
+}
+
+.section-menu__cookies > a:active,
+.section-menu__cookies > a:hover {
+  color: #ffb101;
+}
+
+.section-menu__cookies > a > div {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .section-menu__cookies > a > div {
+    display: inline-block;
+  }
+}

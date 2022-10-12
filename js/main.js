@@ -1,3 +1,4 @@
+
 function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -125,3 +126,8 @@ function closeCreditsDetail() {
     .querySelector(".credits-detail")
     .classList.remove("credits-detail__visible");
 }
+
+window.onload = function () {
+  console.log('got here 1')
+  getCookiePolicyLastUpdateDate()
+};

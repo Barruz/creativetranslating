@@ -36,12 +36,14 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/modernizr.js"></script>
+    <script src="../js/purecookie.js"></script>
 
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/fonts.css" />
     <link rel="stylesheet" href="../css/elements.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/purecookie.css" />
 
     <!-- ADD COOKIE CONSENT FORM -->
     <!-- ADD GOOGLE ANALYTICS -->
@@ -799,33 +801,41 @@
       <div class="section-contact__text">
         Aktuálně mám kapacitu jen na menší, krátkodobé projekty.
       </div>
-      <div class="section-contact__id-info">
-        Fyzická osoba zapsaná v živnostenském rejstříku MČ Praha 6 od 25. 6.
-        2013
-        <span> | </span>Mgr. Barbora Růžičková, Šlikova 1221/40, 169 00 Praha 6,
-        IČ: 01830546 (nejsem plátce DPH)
-      </div>
     </div>
 
     <div class="section section-footer" id="footer">
       <div class="section-footer__copyright">
-        Ⓒ 2022 Barbora Růžičková <span>•</span>
-        <button
-          aria-label="Zobrazit seznam autorů fotografií"
-          class="section-footer__credits"
-          onclick="openCreditsDetail()"
-        >
-          Autoři fotografií
-        </button>
+        <div class="section-footer__copyright__author">
+          Ⓒ 2022 Barbora Růžičková
+        </div>
+        <span>•</span>
+        <div class="section-footer__credits">
+          <button
+            aria-label="Photo & Image Credits"
+            class="section-footer__credits"
+            onclick="openCreditsDetail()"
+          >
+            Autoři fotografií
+          </button>
+        </div>
+        <!--<span>•</span>
+        <div class="section-footer__credits">
+          <a href="cz/privacypolicy/">Privacy Policy</a>
+        </div>-->
+        <span>•</span>
+        <div class="section-footer__credits">
+          <a href="cookies/">Cookies</a>
+        </div>
       </div>
       <button
-        aria-label="Zpět nahoru"
+        aria-label="Scroll to top"
         onclick="scrollToTop()"
         class="section-footer__scroll-to-top"
       >
         ⌃
       </button>
     </div>
+
     <div class="credits-detail hidden">
       <button
         aria-label="Zavřít seznam autorů fotografií"

@@ -5,7 +5,7 @@
   prefix="fb: http://ogp.me/ns/fb#"
 >
   <head>
-    <title>Creative Translating | Barbora Růžičková | English and Czech</title>
+    <title>Creative Translating</title>
 
     <meta charset="UTF-8" />
     <meta name="author" content="Barbora Růžičková" />
@@ -15,13 +15,13 @@
     />
     <meta
       name="description"
-      content="Portfolio website of a translator who focuses on creative content in English and Czech."
+      content="Translating creative content from English to Czech and back."
     />
     <meta name="image" content="resources/images/featured.png" />
 
     <meta
       property="og:title"
-      content="Creative Translating | Barbora Růžičková | English and Czech"
+      content="Creative Translating"
     />
     <meta property="og:url" content="https://www.creativetranslating.com" />
     <meta property="og:type" content="website" />
@@ -31,19 +31,20 @@
     />
     <meta
       property="og:description"
-      content="Portfolio website of a translator who focuses on creative content in English and Czech."
+      content="Translating creative content from English to Czech and back."
     />
 
     <script src="js/main.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="js/purecookie.js"></script>
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/elements.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/purecookie.css" />
 
-    <!-- ADD COOKIE CONSENT FORM -->
     <!-- ADD GOOGLE ANALYTICS -->
 
     <!-- Favicon -->
@@ -767,24 +768,31 @@
       <div class="section-contact__text">
         I currently only take on short-term projects.
       </div>
-      <div class="section-contact__id-info">
-        Sole proprietorship registered in the Register of Trades of the Czech
-        Republic since 25. 6. 2013, by the Prague 6 Municipal District
-        Authority<span> | </span>Mgr. Barbora Růžičková, Šlikova 1221/40, 169 00
-        Praha 6, ID No.: 01830546 (not VAT-registered)
-      </div>
     </div>
 
     <div class="section section-footer" id="footer">
       <div class="section-footer__copyright">
-        Ⓒ 2022 Barbora Růžičková <span>•</span>
-        <button
-          aria-label="Photo & Image Credits"
-          class="section-footer__credits"
-          onclick="openCreditsDetail()"
-        >
-          Photo & Image Credits
-        </button>
+        <div class="section-footer__copyright__author">
+          Ⓒ 2022 Barbora Růžičková
+        </div>
+        <span>•</span>
+        <div class="section-footer__credits">
+          <button
+            aria-label="Photo & Image Credits"
+            class="section-footer__credits"
+            onclick="openCreditsDetail()"
+          >
+            Photo & Image Credits
+          </button>
+        </div>
+        <!--<span>•</span>
+        <div class="section-footer__credits">
+          <a href="cz/privacypolicy/">Privacy Policy</a>
+        </div>-->
+        <span>•</span>
+        <div class="section-footer__credits">
+          <a href="en/cookies/">Cookies</a>
+        </div>
       </div>
       <button
         aria-label="Scroll to top"
