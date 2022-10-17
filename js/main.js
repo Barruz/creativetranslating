@@ -126,8 +126,3 @@ function closeCreditsDetail() {
     .querySelector(".credits-detail")
     .classList.remove("credits-detail__visible");
 }
-
-window.onload = function () {
-  console.log('got here 1')
-  getCookiePolicyLastUpdateDate()
-};

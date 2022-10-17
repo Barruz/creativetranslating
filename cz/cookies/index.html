@@ -42,7 +42,41 @@
     <link rel="stylesheet" href="../../css/menu.css" />
     <link rel="stylesheet" href="../../css/purecookie.css" />
 
-    <!-- ADD GOOGLE ANALYTICS -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-15Z03E49XG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 500,
+      });
+      gtag("js", new Date());
+      gtag("config", "G-15Z03E49XG");
+
+      let cookieConsentGranted = !!document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("cookie-accept"))
+        ?.split("=")[1];
+
+      if (cookieConsentGranted) {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "granted",
+        });
+      } else {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "denied",
+        });
+      }
+    </script>
 
     <!-- Favicon -->
     <link

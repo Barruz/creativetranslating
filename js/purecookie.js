@@ -121,15 +121,19 @@ function purecookieEditConsent() {
 }
 
 function getCookiePolicyLastUpdateDate() {
-  const textbox = document.getElementById("cookies-datelastupdated");
-  let lastModifiedDate = new Date(document.lastModified);
-  let formattedDate =
-    lastModifiedDate.getDate() +
-    "/" +
-    (lastModifiedDate.getMonth() + 1) +
-    "/" +
-    lastModifiedDate.getFullYear();
-  textbox.innerHTML = formattedDate;
+  var url = window.location.href;
+  let cookiePage = url.includes("cookies");
+  if (cookiePage) {
+    const textbox = document.getElementById("cookies-datelastupdated");
+    let lastModifiedDate = new Date(document.lastModified);
+    let formattedDate =
+      lastModifiedDate.getDate() +
+      "/" +
+      (lastModifiedDate.getMonth() + 1) +
+      "/" +
+      lastModifiedDate.getFullYear();
+    textbox.innerHTML = formattedDate;
+  }
 }
 
 window.onload = function () {
