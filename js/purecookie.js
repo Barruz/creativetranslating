@@ -5,9 +5,9 @@ var purecookieDesc =
 var purecookieDescCz =
   "Na těchto stránkách využívám k analýze návštěvnosti soubory cookies (s pomocí nástroje Google Analytics). Je to v pořádku?"; // Description CZ
 var purecookieLink = '<a href="" target="_blank">Cookies</a>'; // Cookiepolicy link
-var purecookieLinkPrivacyPolicy =
-  '<a href="" target="_blank">Privacy Policy</a>'; // Privacy policy link EN
-var purecookieLinkPrivacyPolicyCz =
+var purecookieLinkPersonalDataProcessing =
+  '<a href="" target="_blank">Personal Data Processing</a>'; // Privacy policy link EN
+var purecookieLinkPersonalDataProcessingCz =
   '<a href="" target="_blank">Zpracování osobních údajů</a>'; // Privacy policy link CZ
 var purecookieButton = "Accept"; // Button Accept text EN
 var purecookieButtonCz = "Přijmout"; // Button Accept text CZ
@@ -80,12 +80,12 @@ function drawCookieConsentBanner(language) {
     purecookieTitle +
     '</a></div><div class="cookieDesc"><p>' +
     (language === "en" ? purecookieDesc : purecookieDescCz) +
-    /* "</p><p>" +
-  purecookieLink +
-  " | " +
-  (language === "en"
-    ? purecookieLinkPrivacyPolicy
-    : purecookieLinkPrivacyPolicyCz) + */
+    "</p><p>" +
+    purecookieLink +
+    " | " +
+    (language === "en"
+      ? purecookieLinkPersonalDataProcessing
+      : purecookieLinkPersonalDataProcessingCz) +
     '</p></div><div class="cookieButtonRow"><div class="cookieButton"><a onClick="purecookieAccept();">' +
     (language === "en" ? purecookieButton : purecookieButtonCz) +
     '</a></div><div class="cookieButtonReject"><a onClick="purecookieReject();">' +
@@ -120,24 +120,7 @@ function purecookieEditConsent() {
   pureFadeIn("cookieConsentContainer");
 }
 
-function getCookiePolicyLastUpdateDate() {
-  var url = window.location.href;
-  let cookiePage = url.includes("cookies");
-  if (cookiePage) {
-    const textbox = document.getElementById("cookies-datelastupdated");
-    let lastModifiedDate = new Date(document.lastModified);
-    let formattedDate =
-      lastModifiedDate.getDate() +
-      "/" +
-      (lastModifiedDate.getMonth() + 1) +
-      "/" +
-      lastModifiedDate.getFullYear();
-    textbox.innerHTML = formattedDate;
-  }
-}
-
 window.onload = function () {
   var language = getLanguage();
   cookieConsent(language);
-  getCookiePolicyLastUpdateDate();
 };

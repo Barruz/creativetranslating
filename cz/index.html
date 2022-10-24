@@ -19,10 +19,7 @@
     />
     <meta name="image" content="../resources/images/featured.png" />
 
-    <meta
-      property="og:title"
-      content="Tvůrčí překlad"
-    />
+    <meta property="og:title" content="Tvůrčí překlad" />
     <meta property="og:url" content="https://www.creativetranslating.com" />
     <meta property="og:type" content="website" />
     <meta
@@ -60,8 +57,6 @@
         analytics_storage: "denied",
         wait_for_update: 500,
       });
-      gtag("js", new Date());
-      gtag("config", "G-15Z03E49XG");
 
       let cookieConsentGranted = !!document.cookie
         .split("; ")
@@ -73,6 +68,8 @@
           ad_storage: "denied",
           analytics_storage: "granted",
         });
+        gtag("js", new Date());
+        gtag("config", "G-15Z03E49XG");
       } else {
         gtag("consent", "update", {
           ad_storage: "denied",
@@ -851,10 +848,10 @@
             Autoři fotografií
           </button>
         </div>
-        <!--<span>•</span>
+        <span>•</span>
         <div class="section-footer__credits">
-          <a href="cz/privacypolicy/">Privacy Policy</a>
-        </div>-->
+          <a href="personaldataprocessing/">Zpracování osobních údajů</a>
+        </div>
         <span>•</span>
         <div class="section-footer__credits">
           <a href="cookies/">Cookies</a>

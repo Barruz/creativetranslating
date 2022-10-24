@@ -57,8 +57,6 @@
         analytics_storage: "denied",
         wait_for_update: 500,
       });
-      gtag("js", new Date());
-      gtag("config", "G-15Z03E49XG");
 
       let cookieConsentGranted = !!document.cookie
         .split("; ")
@@ -70,6 +68,8 @@
           ad_storage: "denied",
           analytics_storage: "granted",
         });
+        gtag("js", new Date());
+        gtag("config", "G-15Z03E49XG");
       } else {
         gtag("consent", "update", {
           ad_storage: "denied",
@@ -816,10 +816,10 @@
             Photo & Image Credits
           </button>
         </div>
-        <!--<span>•</span>
+        <span>•</span>
         <div class="section-footer__credits">
-          <a href="cz/privacypolicy/">Privacy Policy</a>
-        </div>-->
+          <a href="cz/personaldataprocessing/">Personal Data Processing</a>
+        </div>
         <span>•</span>
         <div class="section-footer__credits">
           <a href="en/cookies/">Cookies</a>
