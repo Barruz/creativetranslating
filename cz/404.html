@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html
+  lang="cs-cz"
+  xmlns="http://www.w3.org/1999/xhtml"
+  prefix="fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <title>Tvůrčí překlad: Stránka nenalezena</title>
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="Barbora Růžičková" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Stránka nenalezena (404) pro stránky CreativeTranslating.com."
+    />
+    <meta name="image" content="../resources/images/featured.png" />
+
+    <meta property="og:title" content="Tvůrčí překlad: Stránka nenalezena" />
+    <meta property="og:url" content="https://www.creativetranslating.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.creativetranslating.com/resources/images/featured.png"
+    />
+    <meta
+      property="og:description"
+      content="Stránka nenalezena (404) pro stránky CreativeTranslating.com."
+    />
+
+    <script src="../js/main.js"></script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/purecookie.js"></script>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/elements.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/purecookie.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-15Z03E49XG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 500,
+      });
+
+      let cookieConsentGranted = !!document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("cookie-accept"))
+        ?.split("=")[1];
+
+      if (cookieConsentGranted) {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "granted",
+        });
+        gtag("js", new Date());
+        gtag("config", "G-15Z03E49XG");
+      } else {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "denied",
+        });
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../resources/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../resources/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../resources/images/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="../resources/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="manifest" href="../../site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#136F63" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <div class="section-notfound404">
+      <div class="section section-menu" id="menu">
+        <button aria-label="Logo" onclick="scrollToTop()" class="logo-wrapper">
+          <img
+            src="../resources/images/logo.svg"
+            width="218"
+            height="126"
+            class="logo"
+            alt="Logo"
+          />
+        </button>
+        <div class="section-menu__cookies">
+          <a href="../">
+            <div>zpět na hlavní stránku</div>
+            <span class="nav-arrow">➝</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="section section-home notfound404__text">
+        <h1 class="title">404: Stránka nenalezena</h1>
+        <div>
+          Zdá se, že stránka, kterou jste hledali, není k dispozici. Moc mě to
+          mrzí!
+        </div>
+        <div>Zkusíte <a href="../cz/" class="link">hlavní stránku</a>?</div>
+      </div>
+
+      <div class="section section-footer notfound404__footer" id="footer">
+        <div class="section-footer__copyright">
+          <div class="section-footer__copyright__author">
+            Ⓒ 2022 Barbora Růžičková
+          </div>
+        </div>
+        <button
+          aria-label="Scroll to top"
+          onclick="scrollToTop()"
+          class="section-footer__scroll-to-top"
+        >
+          ⌃
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

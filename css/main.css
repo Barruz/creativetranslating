@@ -1014,3 +1014,40 @@ BREAKPOINTS
     top: 12%;
   }
 }
+
+/* 404 */
+
+.section-notfound404 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.notfound404__text {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+  height: 100%;
+}
+
+.notfound404__text > h1 {
+  padding-bottom: 2rem;
+}
+
+.notfound404__text > div {
+  font-size: large;
+  padding-bottom: 1rem;
+}
+
+.notfound404__footer {
+  margin-top: auto;
+}
+
+@media (min-width: 992px) {
+  .notfound404__text {
+    padding-top: 15%;
+    height: auto;
+  }
+}
