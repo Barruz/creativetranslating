@@ -56,7 +56,7 @@
   display: flex;
 }
 
-.cookieConsentContainer .cookieButton a {
+.cookieConsentContainer .cookieButton button {
   display: inline-block;
   font-family: "Montserrat SemiBold", arial, "sans-serif";
   color: #ffffff;
@@ -75,15 +75,15 @@
   transition: background 0.3s;
 }
 
-.cookieConsentContainer .cookieButton a:hover,
-.cookieConsentContainer .cookieButton a:active {
+.cookieConsentContainer .cookieButton button:hover,
+.cookieConsentContainer .cookieButton button:active {
   cursor: pointer;
   background: #ffb101;
   border-color: #ffb101;
   color: #ffffff;
 }
 
-.cookieConsentContainer .cookieButtonReject a {
+.cookieConsentContainer .cookieButtonReject button {
   display: inline-block;
   font-family: "Montserrat SemiBold", arial, "sans-serif";
   color: #136f63;
@@ -102,8 +102,8 @@
   transition: background 0.3s;
 }
 
-.cookieConsentContainer .cookieButtonReject a:hover,
-.cookieConsentContainer .cookieButtonReject a:active {
+.cookieConsentContainer .cookieButtonReject button:hover,
+.cookieConsentContainer .cookieButtonReject button:active {
   cursor: pointer;
   border-color: #ffb101;
   color: #ffb101;

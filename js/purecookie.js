@@ -85,11 +85,11 @@ function drawCookieConsentBanner(language) {
     (language === "en"
       ? purecookieLinkPersonalDataProcessing
       : purecookieLinkPersonalDataProcessingCz) +
-    '</p></div><div class="cookieButtonRow"><div class="cookieButton"><a onClick="purecookieAccept();">' +
+    '</p></div><div class="cookieButtonRow"><div class="cookieButton"><button aria-label="Cookie Accept Button" onClick="purecookieAccept();">' +
     (language === "en" ? purecookieButton : purecookieButtonCz) +
-    '</a></div><div class="cookieButtonReject"><a onClick="purecookieReject();">' +
+    '</button></div><div class="cookieButtonReject"><button aria-label="Cookie Reject Button" onClick="purecookieReject();">' +
     (language === "en" ? purecookieButtonReject : purecookieButtonRejectCz) +
-    "</a></div></div></div>";
+    "</button></div></div></div>";
 }
 
 function cookieConsent(language) {
