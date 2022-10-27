@@ -110,19 +110,3 @@ function goToNextPortfolioItem() {
     .getElementById(previousOpenPortfolioItemNo)
     .classList.remove("hidden");
 }
-
-function openCreditsDetail() {
-  toggleBodyScroll();
-  document.querySelector(".credits-detail").classList.remove("hidden");
-  document
-    .querySelector(".credits-detail")
-    .classList.add("credits-detail__visible");
-}
-
-function closeCreditsDetail() {
-  toggleBodyScroll();
-  document.querySelector(".credits-detail").classList.add("hidden");
-  document
-    .querySelector(".credits-detail")
-    .classList.remove("credits-detail__visible");
-}

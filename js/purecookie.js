@@ -1,19 +1,19 @@
 // --- Config --- //
-var purecookieTitle = "Cookies."; // Title
+var purecookieTitle = "Cookies.";
 var purecookieDesc =
-  "I use cookies to analyze traffic on my website via Google Analytics. Is this okay with you?"; // Description EN
+  "I use cookies to analyze traffic on my website via Google Analytics. Is this okay with you?";
 var purecookieDescCz =
   "Na těchto stránkách využívám k analýze návštěvnosti soubory cookies (s pomocí nástroje Google Analytics). Je to v pořádku?"; // Description CZ
-var purecookieLink = '<a href="" target="_blank">Cookies</a>'; // Cookiepolicy link
+var purecookieLink = '<a href="../en/cookies">Cookies</a>';
+var purecookieLinkCz = '<a href="../cz/cookies">Cookies</a>';
 var purecookieLinkPersonalDataProcessing =
-  '<a href="" target="_blank">Personal Data Processing</a>'; // Privacy policy link EN
+  '<a href="../en/personaldataprocessing">Personal Data Processing</a>';
 var purecookieLinkPersonalDataProcessingCz =
-  '<a href="" target="_blank">Zpracování osobních údajů</a>'; // Privacy policy link CZ
-var purecookieButton = "Accept"; // Button Accept text EN
-var purecookieButtonCz = "Přijmout"; // Button Accept text CZ
-var purecookieButtonReject = "Reject"; // Button Reject text EN
-var purecookieButtonRejectCz = "Odmítnout"; // Button Reject text CZ
-// ---        --- //
+  '<a href="../cz/personaldataprocessing">Zpracování osobních údajů</a>';
+var purecookieButton = "Accept";
+var purecookieButtonCz = "Přijmout";
+var purecookieButtonReject = "Reject";
+var purecookieButtonRejectCz = "Odmítnout";
 
 function getLanguage() {
   var url = window.location.href;
@@ -70,18 +70,17 @@ function getCookie(name) {
 }
 
 function eraseCookie(name) {
-  //document.cookie = name + "=; Max-Age=-99999999;";
   document.cookie = name + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 }
 
 function drawCookieConsentBanner(language) {
   document.body.innerHTML +=
-    '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' +
+    '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle">' +
     purecookieTitle +
-    '</a></div><div class="cookieDesc"><p>' +
+    '</div><div class="cookieDesc"><p>' +
     (language === "en" ? purecookieDesc : purecookieDescCz) +
     "</p><p>" +
-    purecookieLink +
+    (language === "en" ? purecookieLink : purecookieLinkCz) +
     " | " +
     (language === "en"
       ? purecookieLinkPersonalDataProcessing
