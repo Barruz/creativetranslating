@@ -959,6 +959,7 @@ BREAKPOINTS
 
 .section-cookies h1 {
   padding-bottom: 2rem;
+  line-height: 3rem;
 }
 
 .section-cookies button {
@@ -977,7 +978,7 @@ BREAKPOINTS
 
 .cookies__description__title {
   font-family: "Montserrat SemiBold", sans-serif;
-  padding-top: 1.5rem;
+  font-size: medium;
 }
 
 .cookies__description-nopadding {
