@@ -4,12 +4,12 @@ var purecookieDesc =
   "I use cookies to analyze traffic on my website via Google Analytics. Is this okay with you?";
 var purecookieDescCz =
   "Na těchto stránkách využívám k analýze návštěvnosti soubory cookies (s pomocí nástroje Google Analytics). Je to v pořádku?"; // Description CZ
-var purecookieLink = '<a href="../en/cookies">Cookies</a>';
-var purecookieLinkCz = '<a href="../cz/cookies">Cookies</a>';
+var purecookieLink = '<a href="../en/cookies/">Cookies</a>';
+var purecookieLinkCz = '<a href="../cz/cookies/">Cookies</a>';
 var purecookieLinkPersonalDataProcessing =
-  '<a href="../en/personaldataprocessing">Personal Data Processing</a>';
+  '<a href="../en/personaldataprocessing/">Personal Data Processing</a>';
 var purecookieLinkPersonalDataProcessingCz =
-  '<a href="../cz/personaldataprocessing">Zpracování osobních údajů</a>';
+  '<a href="../cz/personaldataprocessing/">Zpracování osobních údajů</a>';
 var purecookieButton = "Accept";
 var purecookieButtonCz = "Přijmout";
 var purecookieButtonReject = "Reject";
