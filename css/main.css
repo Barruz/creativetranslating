@@ -683,7 +683,7 @@ BREAKPOINTS
 
 @media (min-width: 992px) {
   .section-about {
-    padding-left: 5rem;
+    padding-left: 10rem;
   }
 
   .section-about__bio__text {
@@ -708,14 +708,8 @@ BREAKPOINTS
 }
 
 @media (min-width: 1200px) {
-  .section-about__bio__text {
-    -webkit-box-flex: 80%;
-    flex: 80%;
-  }
 
   .section-about__headshot {
-    -webkit-box-flex: 20%;
-    flex: 20%;
     margin-top: 0;
   }
 }
@@ -761,8 +755,8 @@ BREAKPOINTS
 
 @media (min-width: 992px) {
   .section-contact {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     padding-bottom: 3rem;
     text-align: left;
   }
